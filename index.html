@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 产品经理学堂 · 从工小智到 AI PM</title>
+<meta name="description" content="面向转型者的 AI 产品经理学习网站:知识体系、工小智经验迁移、简历与面试准备。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <span class="brand-logo">🧭</span>
+      <div class="brand-text">
+        <div class="brand-title">AI PM 学堂</div>
+        <div class="brand-sub">从智能客服到 AI 产品经理</div>
+      </div>
+    </div>
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="🔍 搜索课程、概念、面试题…" autocomplete="off">
+      <div id="searchResults" class="search-results hidden"></div>
+    </div>
+    <nav id="moduleNav"></nav>
+    <div class="sidebar-footer">
+      <div class="sb-progress-label">
+        <span>学习进度</span>
+        <span id="sbProgressText">0%</span>
+      </div>
+      <div class="sb-progress-track"><div id="sbProgressBar" class="sb-progress-fill"></div></div>
+      <button id="resetProgress" class="link-btn">重置进度</button>
+    </div>
+  </aside>
+
+  <div id="scrim" class="scrim"></div>
+
+  <main id="main">
+    <header class="topbar">
+      <button id="menuBtn" class="menu-btn" aria-label="打开目录">☰</button>
+      <div id="crumb" class="crumb"></div>
+    </header>
+    <div id="content" class="content"></div>
+  </main>
+</div>
+
+<script src="js/content-roadmap.js"></script>
+<script src="js/content-concepts.js"></script>
+<script src="js/content-design.js"></script>
+<script src="js/content-career.js"></script>
+<script src="js/content-frontier.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
