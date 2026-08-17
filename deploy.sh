@@ -39,8 +39,11 @@ else
 fi
 
 echo "== 推送到 GitHub =="
-git push -u origin main 2>/dev/null || git push -u origin master
+echo "(提示输入用户名时填: Buren-joker;密码处粘贴你的 Personal Access Token)"
+git push -u origin main
 
 echo ""
-echo "✅ 推送完成。请在 GitHub 仓库 Settings → Pages 开启 Pages 部署(main 分支 / root),"
-echo "   几分钟后即可访问 https://<你的用户名>.github.io/<仓库名>/"
+echo "✅ 推送完成。接下来:"
+echo "1. 打开 https://github.com/Buren-joker/ai-pm-academy/settings/pages"
+echo "2. Source 选择 Deploy from a branch → main → /(root) → Save"
+echo "3. 约 1-2 分钟后访问: https://Buren-joker.github.io/ai-pm-academy/"
